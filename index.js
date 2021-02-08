@@ -38,13 +38,20 @@ const dataObj = JSON.parse(data);
 const server = http.createServer((req, res) => {
   const pathName = req.url;
 
+  // OVERVIEW page
   if (pathName === '/' || pathName === '/overview') {
     res.end('This is th OVERVIEW');
+
+    // PRODUCT page
   } else if (pathName === '/product') {
     res.end('This the PRODUCT');
+
+    // API
   } else if (pathName === '/api') {
     res.writeHead(200, { 'Content-type': 'application/json' });
     res.end(data);
+
+    // Not found
   } else {
     res.writeHead(404, {
       'Contetn-type': 'text/html',
