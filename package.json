@@ -18,6 +18,6 @@
   "homepage": "https://github.com/YakubuAmidu/Node-grocery#readme",
   "dependencies": {
     "nodemon": "^2.0.7",
-    "slugify": "^1.4.6"
+    "slugify": "~1.4.6"
   }
 }
